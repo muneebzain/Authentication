@@ -11,5 +11,6 @@ target 'Authentication' do
   pod 'Firebase'
   pod 'ProgressHUD'
   pod 'FirebaseAuth'
+  pod 'GoogleSignIn'
 
 end

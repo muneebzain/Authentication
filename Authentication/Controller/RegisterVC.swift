@@ -44,7 +44,7 @@ class RegisterVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    
+    //MARK: - Register User
     func registerUser(email: String, password: String) {
         ProgressHUD.show()
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
@@ -59,5 +59,7 @@ class RegisterVC: UIViewController {
             ProgressHUD.dismiss()
         }
     }
+    
+  
     
 }
