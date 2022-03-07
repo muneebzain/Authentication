@@ -86,6 +86,13 @@
 			path = Info.plist;
 			sourceTree = "<group>";
 		};
+		0490505C27D62A0100113730 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		04B65C0B27D5CC81006AEA49 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +114,7 @@
 		04B65C1627D5CC81006AEA49 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				0490505C27D62A0100113730 /* Authentication */,
 				0490505427D6258100113730 /* Delegates */,
 				0490505627D6261300113730 /* Controller */,
 				0490505527D6259400113730 /* Storyboard */,

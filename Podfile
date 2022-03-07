@@ -10,5 +10,6 @@ target 'Authentication' do
   pod 'FirebaseFirestore'
   pod 'Firebase'
   pod 'ProgressHUD'
+  pod 'FirebaseAuth'
 
 end
