@@ -40,6 +40,8 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func alreadyAccountBtnPressed(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

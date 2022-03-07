@@ -158,13 +158,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="fzd-73-JT6">
-                                <rect key="frame" x="20" y="196" width="374" height="131"/>
+                                <rect key="frame" x="20" y="196" width="374" height="113"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ln-gc-fn3">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IBN-cy-HEq">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="54"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -172,20 +172,22 @@
                                         <constraints>
                                             <constraint firstItem="IBN-cy-HEq" firstAttribute="leading" secondItem="5Ln-gc-fn3" secondAttribute="leading" id="3gC-gA-5FY"/>
                                             <constraint firstItem="IBN-cy-HEq" firstAttribute="top" secondItem="5Ln-gc-fn3" secondAttribute="top" id="XG1-u2-4Ab"/>
+                                            <constraint firstAttribute="height" constant="45" id="wr6-EG-hm6"/>
                                             <constraint firstAttribute="trailing" secondItem="IBN-cy-HEq" secondAttribute="trailing" id="xsA-Bs-0ht"/>
                                             <constraint firstAttribute="bottom" secondItem="IBN-cy-HEq" secondAttribute="bottom" id="zUv-Zs-LpG"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIL-Vs-mko">
-                                        <rect key="frame" x="0.0" y="77" width="374" height="54"/>
+                                        <rect key="frame" x="0.0" y="68" width="374" height="45"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="knx-19-jhu">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="54"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="0Xu-sO-hhG"/>
                                             <constraint firstItem="knx-19-jhu" firstAttribute="leading" secondItem="SIL-Vs-mko" secondAttribute="leading" id="0rr-O1-jvA"/>
                                             <constraint firstItem="knx-19-jhu" firstAttribute="top" secondItem="SIL-Vs-mko" secondAttribute="top" id="Mok-dV-8lP"/>
                                             <constraint firstAttribute="bottom" secondItem="knx-19-jhu" secondAttribute="bottom" id="xLc-nP-eub"/>
@@ -195,7 +197,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgo-em-pcQ">
-                                <rect key="frame" x="20" y="377" width="374" height="45"/>
+                                <rect key="frame" x="20" y="359" width="374" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="iKa-bI-6Ie"/>
@@ -204,9 +206,12 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Login">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="uka-ny-EHY" eventType="touchUpInside" id="kcc-jq-1hq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4L-2b-UDK">
-                                <rect key="frame" x="20" y="582" width="374" height="31.5"/>
+                                <rect key="frame" x="20" y="564" width="374" height="31.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
@@ -226,9 +231,12 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="accountBtnPressed:" destination="uka-ny-EHY" eventType="touchUpInside" id="R2P-CA-bPw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rso-xX-FRK">
-                                <rect key="frame" x="20" y="452" width="374" height="45"/>
+                                <rect key="frame" x="20" y="434" width="374" height="45"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="UFv-hZ-zPE"/>
@@ -237,9 +245,12 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Signin with Google">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signinGoogleBtnPressed:" destination="uka-ny-EHY" eventType="touchUpInside" id="JoX-kz-FgP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jco-xo-i0d">
-                                <rect key="frame" x="20" y="517" width="374" height="45"/>
+                                <rect key="frame" x="20" y="499" width="374" height="45"/>
                                 <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="k6G-JM-ogt"/>
@@ -248,6 +259,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Signin with Facebook">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signInFBBtnpressed:" destination="uka-ny-EHY" eventType="touchUpInside" id="Vvc-P5-iig"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mHz-gL-ftk"/>
@@ -273,6 +287,10 @@
                             <constraint firstItem="rso-xX-FRK" firstAttribute="top" secondItem="Vgo-em-pcQ" secondAttribute="bottom" constant="30" id="qQx-mK-ySS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="IBN-cy-HEq" id="tb9-QA-heX"/>
+                        <outlet property="passwordTxtField" destination="knx-19-jhu" id="ZP8-vW-jxA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MC7-8U-WaD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -285,8 +303,21 @@
                     <view key="view" contentMode="scaleToFill" id="jpS-f4-fJE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3o-bd-ckt">
+                                <rect key="frame" x="20" y="104" width="374" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Oyo-Qy-PuC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oyo-Qy-PuC" firstAttribute="trailing" secondItem="z3o-bd-ckt" secondAttribute="trailing" constant="20" id="0Zd-W2-Qtn"/>
+                            <constraint firstItem="z3o-bd-ckt" firstAttribute="leading" secondItem="Oyo-Qy-PuC" secondAttribute="leading" constant="20" id="LTq-5s-WlC"/>
+                            <constraint firstItem="z3o-bd-ckt" firstAttribute="top" secondItem="Oyo-Qy-PuC" secondAttribute="top" constant="60" id="YQf-DD-pXi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcA-B6-POB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
