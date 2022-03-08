@@ -211,7 +211,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4L-2b-UDK">
-                                <rect key="frame" x="20" y="564" width="374" height="31.5"/>
+                                <rect key="frame" x="20" y="509" width="374" height="31.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
@@ -249,30 +249,14 @@
                                     <action selector="signinGoogleBtnPressed:" destination="uka-ny-EHY" eventType="touchUpInside" id="JoX-kz-FgP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jco-xo-i0d">
-                                <rect key="frame" x="20" y="499" width="374" height="45"/>
-                                <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="k6G-JM-ogt"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Signin with Facebook">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="signInFBBtnpressed:" destination="uka-ny-EHY" eventType="touchUpInside" id="Vvc-P5-iig"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mHz-gL-ftk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="U4L-2b-UDK" firstAttribute="leading" secondItem="mHz-gL-ftk" secondAttribute="leading" constant="20" id="4t2-W8-f47"/>
                             <constraint firstItem="mHz-gL-ftk" firstAttribute="trailing" secondItem="fzd-73-JT6" secondAttribute="trailing" constant="20" id="8Ok-5h-84L"/>
+                            <constraint firstItem="U4L-2b-UDK" firstAttribute="top" secondItem="rso-xX-FRK" secondAttribute="bottom" constant="30" id="9ky-Um-lax"/>
                             <constraint firstItem="mHz-gL-ftk" firstAttribute="trailing" secondItem="rso-xX-FRK" secondAttribute="trailing" constant="20" id="Hj4-gx-ONI"/>
-                            <constraint firstItem="mHz-gL-ftk" firstAttribute="trailing" secondItem="Jco-xo-i0d" secondAttribute="trailing" constant="20" id="K7V-E0-DpQ"/>
-                            <constraint firstItem="Jco-xo-i0d" firstAttribute="leading" secondItem="mHz-gL-ftk" secondAttribute="leading" constant="20" id="MKA-Lr-9HS"/>
-                            <constraint firstItem="U4L-2b-UDK" firstAttribute="top" secondItem="Jco-xo-i0d" secondAttribute="bottom" constant="20" id="Vqc-lb-76r"/>
                             <constraint firstItem="sLH-PK-TJ1" firstAttribute="top" secondItem="mHz-gL-ftk" secondAttribute="top" constant="50" id="W5Y-oA-xyP"/>
                             <constraint firstItem="Vgo-em-pcQ" firstAttribute="leading" secondItem="mHz-gL-ftk" secondAttribute="leading" constant="20" id="YKJ-oH-W3r"/>
                             <constraint firstItem="Vgo-em-pcQ" firstAttribute="top" secondItem="fzd-73-JT6" secondAttribute="bottom" constant="50" id="Yvt-dq-T2n"/>
@@ -283,7 +267,6 @@
                             <constraint firstItem="fzd-73-JT6" firstAttribute="top" secondItem="sLH-PK-TJ1" secondAttribute="bottom" constant="60" id="cuH-XL-hi0"/>
                             <constraint firstItem="mHz-gL-ftk" firstAttribute="trailing" secondItem="sLH-PK-TJ1" secondAttribute="trailing" constant="20" id="iCF-x5-ecu"/>
                             <constraint firstItem="mHz-gL-ftk" firstAttribute="trailing" secondItem="Vgo-em-pcQ" secondAttribute="trailing" constant="20" id="ldw-P4-gY1"/>
-                            <constraint firstItem="Jco-xo-i0d" firstAttribute="top" secondItem="rso-xX-FRK" secondAttribute="bottom" constant="20" id="qBZ-ki-RfC"/>
                             <constraint firstItem="rso-xX-FRK" firstAttribute="top" secondItem="Vgo-em-pcQ" secondAttribute="bottom" constant="30" id="qQx-mK-ySS"/>
                         </constraints>
                     </view>

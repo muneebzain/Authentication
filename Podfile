@@ -12,5 +12,10 @@ target 'Authentication' do
   pod 'ProgressHUD'
   pod 'FirebaseAuth'
   pod 'GoogleSignIn'
+  pod ‘FacebookCore’
+  pod ‘FacebookLogin’
+  pod ‘FBSDKCoreKit’
+  pod ‘FBSDKLoginKit’
+  pod ‘Firebase/Core’
 
 end

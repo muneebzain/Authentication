@@ -10,6 +10,8 @@ import Firebase
 import FirebaseAuth
 import ProgressHUD
 import GoogleSignIn
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 
 class LoginVC: UIViewController {
@@ -22,7 +24,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.navigationBar.isHidden = true
 
     }
@@ -41,8 +43,6 @@ class LoginVC: UIViewController {
         googleSignIn()
     }
     
-    @IBAction func signInFBBtnpressed(_ sender: UIButton) {
-    }
     
     @IBAction func accountBtnPressed(_ sender: UIButton) {
     }
@@ -66,7 +66,6 @@ class LoginVC: UIViewController {
     
     //MARK: - GoogleSignIn
     func googleSignIn() {
-        ProgressHUD.show()
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
         let config = GIDConfiguration(clientID: clientID)
 
@@ -80,6 +79,7 @@ class LoginVC: UIViewController {
               else {
                 return
               }
+            ProgressHUD.show()
 
               let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                              accessToken: authentication.accessToken)
@@ -98,4 +98,6 @@ class LoginVC: UIViewController {
 
         }
     }
+    
+   
 }
